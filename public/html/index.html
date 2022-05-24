@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <title>Everything In Pi</title>
+</head>
+    <body>
+        <nav class="navbar bg-dark">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1" id="nav-Header">Everything in 𝜋</span>
+            </div>
+          </nav>
+        <h1 class="display-1" id="header-1">See 𝜋 in a different way</h1>
+        <h2 class="display-2" id="header-2">Pi in binary has never looked this good.</h2>
+        
+        <div class="container-sm" id="formContainter">
+            <form action="/pi.html" method="GET" id="getForm">
+                <div class="row g-2">
+                    <div class="col-sm">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelectGrid">
+                            <option selected>Select digits</option>
+                            <option value="1">32K</option>
+                            <option value="2">1M</option>
+                            <option value="2">1B (NOT RECOMENDED, ONLY FOR BEEFY PCs)</option>
+                            </select>
+                            <label for="floatingSelectGrid">Number of digits</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-floating">
+                        <select class="form-select" id="floatingSelectGrid">
+                            <option selected>Decoding</option>
+                            <option value="1">Server-side</option>
+                            <option value="2">Local</option>
+                        </select>
+                        <label for="floatingSelectGrid">Decoding</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

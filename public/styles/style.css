@@ -1,0 +1,46 @@
+body {
+    background-color: #333;
+}
+
+h1 {
+    color: gainsboro;
+}
+
+h2 {
+    color: gainsboro;
+}
+
+h5 {
+    color: gainsboro;
+}
+
+h6 {
+    color: gainsboro;
+}
+
+#nav-Header {
+    color: gainsboro;
+}
+
+#header-1 {
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+#header-2 {
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+#getForm {
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+#formContainer {
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
