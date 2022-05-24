@@ -12,3 +12,5 @@ console.log('Server started at http://localhost:' + port);
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/html/index.html'));
 });
+
+module.exports = app;
