@@ -7,7 +7,7 @@ const cors = require('cors');
 const pi = require('./lib/piLoader');
 
 // middleware
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
