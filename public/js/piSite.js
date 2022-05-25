@@ -15,10 +15,9 @@ function loadPi() {
     };
       
       $.ajax(settings).done(function (response) {
+        $("#piContainer").append(response);
         $("#confirmBox").remove();
+        $("#piButton").remove();
         $("#warning").remove();
-        setTimeout(function() {
-            $("#piContainer").append(response);
-        }, 5000);
       });
 }
