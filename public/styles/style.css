@@ -44,3 +44,14 @@ h6 {
     position: relative;
     top: 100px;
 }
+
+p {
+    text-align: center;
+    position: relative;
+    top: 50px;
+    color: gainsboro;
+}
+
+a {
+    color: gainsboro;
+}
