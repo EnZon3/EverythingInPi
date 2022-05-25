@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/style.css">
+    <script src="/js/piSite.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <title>Everything In Pi</title>
@@ -17,20 +19,22 @@
               <span class="navbar-brand mb-0 h1" id="nav-Header">Everything in 𝜋</span>
             </div>
           </nav>
-        <h1 class="display-1" id="header-1">See 𝜋 in a different way</h1>
-        <h2 class="display-2" id="header-2">Pi in binary has never looked this good.</h2>
-        <h2 class="display-2" id="header-2">Find Waldo*</h2>
-        <h2 class="display-2" id="header-2">Amongi</h2>
-        <h2 class="display-2" id="header-2">And so much more</h2>
-        <p><em>*Finding Waldo is not a guarantee</em></p>
-        <p><em>This site is based on a video made by Stand Up Maths, video here: <a href="https://youtu.be/dET2l8l3upU">https://youtu.be/dET2l8l3upU</a></em></p>
-
-        <!--redirect to pi.html with button-->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <button type="button" class="btn btn-primary btn-lg btn-block" id="piButton" onclick="window.location.href='/pi'">Go now!</button>
-                </div>
-            </div>
+        <h1 class="display-1" id="header-1">3.</h1>
+        <div class="form-floating" id="confirmBox">
+            <select class="form-select" id="floatingSelectGrid">
+            <option selected>Select digits</option>
+            <option value="32K">32K</option>
+            <option value="1M" disabled="true">1M</option>
+            </select>
+            <label for="floatingSelectGrid">Number of digits</label>
+        </div>
+        
+        <div id="piContainer">
+            <h1 class="display-1" id="warning">Warning</h1>
+            <h1 class="display-1" id="warning">You are about to enter the shadow realm</h1>
+            <h1 class="display-1" id="warning">After pressing OK there would be a 5 second delay.</h1>
+            <h1 class="display-1" id="warning">Press OK to continue.</h1>
+            <button class="btn btn-primary" id="piButton" onclick="loadPi();">OK</button>
+        </div>
     </body>
 </html>
