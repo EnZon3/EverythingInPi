@@ -5,5 +5,6 @@
 
 ![Vercel](https://vercelbadge.vercel.app/api/EnZon3/EverythingInPi)
 
-##Reporting issues
+## Reporting issues
+
 Please have a verbose description of the issue and how to reproduce it.
