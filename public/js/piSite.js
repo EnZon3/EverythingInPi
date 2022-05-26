@@ -15,9 +15,12 @@ function loadPi() {
     };
       
       $.ajax(settings).done(function (response) {
-        $("#piContainer").append(response);
         $("#confirmBox").remove();
         $("#piButton").remove();
         $("#warning").remove();
+        $("#warning2").remove();
+        $("#warning3").remove();
+        $("#warning4").remove();
+        $("#piContainer").append(response);
       });
 }
