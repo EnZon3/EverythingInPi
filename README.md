@@ -8,3 +8,7 @@
 ## Reporting issues
 
 Please have a verbose description of the issue and how to reproduce it.
+
+## Site
+
+### https://everything-in-pi.vercel.app
