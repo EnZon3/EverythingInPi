@@ -12,3 +12,7 @@ Please have a verbose description of the issue and how to reproduce it.
 ## Site
 
 ### https://everything-in-pi.vercel.app
+
+## Forking
+
+Forking is welcome, you can make any changes and if you mind, open a PR :)
