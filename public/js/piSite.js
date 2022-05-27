@@ -29,7 +29,7 @@ function loadPi() {
           for (let i = 0; i < splitRes.length; i++) {
             setTimeout(function() {
               $("#piContainer").append(splitRes[i]);
-            }, 100);
+            }, 10);
           }
         }
       });
