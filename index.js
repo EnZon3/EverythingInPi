@@ -32,6 +32,7 @@ app.get('/loadPi', async (req, res) => {
 
     try {
     result = await pi.load(dig, edgeL);
+    console.log("sent");
     } catch (err) {
         console.log(err);
     }

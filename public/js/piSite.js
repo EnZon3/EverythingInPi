@@ -21,6 +21,16 @@ function loadPi() {
         $("#warning2").remove();
         $("#warning3").remove();
         $("#warning4").remove();
-        $("#piContainer").append(response);
+        if (digi == "32K") {
+          $("#piContainer").append(response);
+        } else {
+          splitRes = response.match(/.{2304}/g);
+          console.log(splitRes[0]);
+          for (let i = 0; i < splitRes.length; i++) {
+            setTimeout(function() {
+              $("#piContainer").append(splitRes[i]);
+            }, 100);
+          }
+        }
       });
 }
